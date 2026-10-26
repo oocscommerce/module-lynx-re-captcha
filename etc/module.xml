@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © OOCS Commerce (https://www.oocscommerce.com). All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="OOCS_LynxReCaptcha">
+        <sequence>
+            <!-- The store config this module adds its section to. -->
+            <module name="OOCS_LynxTheme"/>
+            <!-- Storefront reCAPTCHA settings and the resolvers that read them;
+                 validation stays with core's predispatch observers. -->
+            <module name="Magento_ReCaptchaFrontendUi"/>
+        </sequence>
+    </module>
+</config>
